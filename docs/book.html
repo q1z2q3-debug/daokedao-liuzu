@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%237C6D5C'/%3E%3Ctext x='32' y='46' font-size='30' text-anchor='middle' fill='%23F7F4EE' font-family='serif'%3E%E8%97%E4%3C/text%3E%3C/svg%3E">
+<title>润泽说 道可道之六祖坛经 · 自性五句与风幡公案（存疑稿）</title>
+<style>
+:root{--paper:#F7F4EE;--paper2:#FCFAF6;--ink:#25211D;--ink2:#3B352F;--ochre:#994433;--brown:#7C6D5C;--line:#DCD5C8;}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font-family:"Noto Serif SC","Songti SC","Source Han Serif SC",serif;
+  -webkit-font-smoothing:antialiased;line-height:1.95;}
+.page{max-width:760px;margin:0 auto;padding:56px 28px 80px;}
+
+.cover{border:1px solid var(--line);background:var(--paper2);padding:70px 38px 58px;
+  text-align:center;margin-bottom:44px;position:relative;}
+.cover::before{content:"";position:absolute;inset:12px;border:1px solid #EBE4D8;pointer-events:none;}
+.cover .series{font-size:12.5px;letter-spacing:.32em;color:var(--brown);margin-bottom:24px;}
+.cover h1{font-size:38px;font-weight:700;letter-spacing:.16em;margin:0 0 8px;line-height:1.5;}
+.cover .sub{font-size:14.5px;color:var(--brown);letter-spacing:.1em;}
+.cover .tag{display:inline-block;margin-top:14px;padding:3px 12px;font-size:12px;
+  letter-spacing:.16em;color:var(--ochre);border:1px solid #D8B9AE;}
+.cover .rule{width:52px;height:2px;background:var(--ochre);margin:22px auto 18px;}
+.cover .verse{font-size:14.5px;color:var(--brown);letter-spacing:.06em;line-height:2.1;}
+.cover .meta{display:flex;flex-wrap:wrap;justify-content:center;gap:6px 0;font-size:12px;color:#9C8E7C;letter-spacing:.12em;margin-top:26px;}
+.cover .meta span{white-space:nowrap;}
+.cover .meta span:not(:last-child)::after{content:"　·　";color:#C4B9A8;}
+
+.notice{border:1px solid #D8B9AE;background:#FBF3EE;padding:16px 20px;margin-bottom:40px;
+  font-size:14.5px;line-height:1.9;color:#5A4B3F;}
+.notice strong{color:var(--ochre);}
+
+.toc{background:var(--paper2);border:1px solid var(--line);padding:18px 22px;margin-bottom:48px;}
+.toc h4{margin:0 0 10px;font-size:12.5px;letter-spacing:.22em;color:var(--brown);font-weight:400;}
+.toc ol{list-style:none;margin:0;padding:0;}
+.toc li a{display:flex;gap:9px;align-items:baseline;text-decoration:none;color:var(--ink);
+  font-size:14.5px;padding:6px 0;border-bottom:1px dotted #E4DDD0;}
+.toc li a:hover{color:var(--ochre);}
+.toc i{font-style:normal;font-size:11.5px;color:var(--ochre);min-width:12px;}
+
+h2{font-size:23px;font-weight:700;letter-spacing:.06em;margin:52px 0 22px;
+  padding-top:18px;border-top:1px solid var(--line);}
+h2::before{content:"";display:block;width:30px;height:2px;background:var(--ochre);margin:0 0 15px;}
+h3{font-size:15px;font-weight:600;letter-spacing:.14em;color:var(--ochre);
+  margin:28px 0 10px;display:flex;align-items:center;gap:10px;}
+h3::after{content:"";flex:1;height:1px;background:#EAE3D6;}
+
+p{margin:0 0 1.02em;font-size:16.5px;color:var(--ink2);text-align:justify;}
+ul{margin:0 0 16px;padding-left:0;list-style:none;}
+li{font-size:16px;color:var(--ink2);margin-bottom:8px;padding-left:16px;position:relative;text-align:justify;}
+li::before{content:"";position:absolute;left:0;top:.85em;width:5px;height:5px;background:#C9B7A4;border-radius:50%;}
+ol{margin:0 0 16px;padding-left:1.8em;}
+ol li{padding-left:0;}
+ol li::before{content:none;}
+
+blockquote.sutra{margin:22px 0 26px;padding:16px 20px;background:#FBF3EE;
+  border-left:3px solid var(--ochre);}
+blockquote.sutra p{margin:0 0 .6em;font-size:15.5px;line-height:2.05;color:#4A4139;letter-spacing:.03em;}
+blockquote.sutra p:last-child{margin-bottom:0;}
+
+table.t{width:100%;border-collapse:collapse;margin:14px 0 24px;font-size:13.5px;}
+table.t th,table.t td{border:1px solid var(--line);padding:8px 10px;text-align:left;
+  vertical-align:top;line-height:1.7;word-break:break-word;}
+table.t th{background:#F1EAE0;font-weight:600;}
+table.t td{color:var(--ink2);}
+
+.foot{margin-top:60px;padding-top:22px;border-top:1px solid var(--line);text-align:center;
+  font-size:12.5px;color:var(--brown);letter-spacing:.1em;line-height:2.1;}
+
+@media (max-width:640px){
+  .page{padding:30px 17px 54px;}
+  .cover{padding:48px 22px 42px;}
+  .cover h1{font-size:28px;}
+  .cover .verse{font-size:13px;}
+  .cover .meta{font-size:10.5px;letter-spacing:.04em;margin-top:22px;}
+  h2{font-size:20px;margin-top:40px;}
+  p{font-size:15.5px;}
+  li{font-size:15px;}
+  table.t{font-size:12px;display:block;overflow-x:auto;white-space:nowrap;}
+}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="cover">
+    <div class="series">润泽说 · 道可道</div>
+    <h1>六　祖　坛　经</h1>
+    <div class="sub">自性五句与风幡公案</div>
+    <div class="tag">存 疑 稿</div>
+    <div class="rule"></div>
+    <div class="verse">何期自性，本自具足；<br>何期自性，能生万法。</div>
+    <div class="meta"><span>宗宝本《坛经·行由品》</span><span>三才五蕴太极空杯</span><span>不作定论</span></div>
+  </div>
+
+  <div class="notice">
+    <strong>此篇经作者判定不成立。</strong>故标"存疑稿"，不并入任何正式读本的附录，不作定论引用。正文一字未改，保留原貌，供日后补"驳正"一节时对照。
+  </div>
+
+  <nav class="toc"><h4>目　次</h4><ol><li class="wide"><a href="#说明"><i>·</i><span>说明</span></a></li>
+<li class="wide"><a href="#正文"><i>·</i><span>正文</span></a></li>
+<li class="wide"><a href="#附记"><i>·</i><span>附记</span></a></li></ol></nav>
+  <main><h2 id="说明">说明</h2>
+<h3 id="一这一篇是什么">一、这一篇是什么</h3>
+<p>一次解读尝试：把《坛经·行由品》那五句”何期自性”，与”不是风动，不是幡动，仁者心动”这则公案，用「三才五蕴太极空杯」逐层对看，看能不能把两处并到一个框架里讲通。</p>
+<h3 id="二为什么标存疑">二、为什么标”存疑”</h3>
+<p><strong>此篇解读经作者判定不成立。</strong></p>
+<p>判定之后，本篇不做定论，不并入任何正式读本的附录，只作存稿保留。所以标题挂”存疑稿”，正文一字不改——改动会抹掉对照的痕迹。</p>
+<h3 id="三驳正待补">三、驳正（待补）</h3>
+<p>判定”不成立”的具体关节，留此一节待补。在补上之前，读者须知：</p>
+<ul>
+<li>本篇的推演路径（五句 ↔︎ 空杯五剖面、风幡 ↔︎
+杯不动水动）<strong>不能当作《坛经》的义解引用</strong>；</li>
+<li>本篇对”具足 ≠
+盈满”的分辨，属作者自家模型的用法，不可反推为经义；</li>
+<li>凡本稿与正式读本冲突处，一律以正式读本为准。</li>
+</ul>
+<p>补写驳正时，宜逐条对照：哪一条对看是比附、哪一条是误读经文、哪一条只是模型自洽而与经无关。三类要分开，不能一概而论。</p>
+<h3 id="四来处与去向">四、来处与去向</h3>
+<ul>
+<li>本篇原拟作《润泽说 道可道之金刚经》读本的附录六，2026-11-14 曾随
+v1.0.1 上架。</li>
+<li>同日作者指出解读不成立，该读本 v1.0.2
+撤下此篇，书稿恢复为附录一至五。</li>
+<li>撤下的文字不移除，改存本库，附此说明。</li>
+</ul>
+<p>另有一点须交代：正文原为《金刚经》读本的附录，脱开母本后，篇中”本经”“第十分”“第二十七分”等处仍指《金刚经》，未及改写。为存原貌，此处不动正文，仅在此说明。读者若单独读本篇，遇到”本经”二字，一律作《金刚经》解。</p>
+<p><strong>撤下不等于销毁。</strong>
+一份判断错在哪，比一句”错了”更有用；前提是它被标明是错的，而不是混在成书里。</p>
+<hr />
+<h2 id="正文">正文</h2>
+<p>《坛经》那五句”何期自性”，与”不是风动，不是幡动，仁者心动”这则公案，讲的其实是同一只杯子。</p>
+<p>此篇以「三才五蕴太极空杯」为镜，把两处并到一处看。</p>
+<h3 id="一出处这五句是在金刚经的哪一句下说出来的">一、出处：这五句，是在《金刚经》的哪一句下说出来的</h3>
+<p>《坛经·行由品》载：五祖弘忍夜为慧能说《金刚经》，至”<strong>应无所住而生其心</strong>”，慧能言下大悟，遂说出那五句——</p>
+<blockquote class="sutra">
+<p>何期自性，本自清净！<br />
+何期自性，本不生灭！<br />
+何期自性，本自具足！<br />
+何期自性，本无动摇！<br />
+何期自性，能生万法！</p>
+</blockquote>
+<p>“何期”，是”想不到、哪里料到”。不是赞叹，是被撞了一下：原来如此。</p>
+<p>这一层关系必须先说清：<strong>五句不是另立一套理论，是《金刚经》一句话炸开后的五个碎片。</strong>
+说《坛经》与《金刚经》异趣的人，多半没注意这五句的出生地就在这一句上。</p>
+<p>所以放在本经读本的末尾谈它，不算外插——它是从第十分那句话里长出来的。</p>
+<h3 id="二五句与空杯五个剖面">二、五句与空杯：五个剖面</h3>
+<table class="t">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>五句</th>
+<th>空杯对应</th>
+<th>一句话</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>本自清净</td>
+<td>杯本无垢</td>
+<td>垢在内壁，擦即去；杯之性未尝被染</td>
+</tr>
+<tr class="even">
+<td>本不生灭</td>
+<td>杯不因盛物而生，不因空竭而死</td>
+<td>成住坏空是”杯相”的事，非”杯性”的事</td>
+</tr>
+<tr class="odd">
+<td>本自具足</td>
+<td>杯之为杯，正在其空</td>
+<td>具足不是装满（详下节）</td>
+</tr>
+<tr class="even">
+<td>本无动摇</td>
+<td>杯不自摇</td>
+<td>摇的是水，不是杯</td>
+</tr>
+<tr class="odd">
+<td>能生万法</td>
+<td>空故能盛，应物而现</td>
+<td>一器而可茶、可药、可水</td>
+</tr>
+</tbody>
+</table>
+<p>逐条略说：</p>
+<p><strong>本自清净。</strong>
+杯里装过茶，留下茶渍；洗了就净。麻烦的是，人往往把茶渍当成杯的一部分，把”我曾经装过什么”当成”我是什么”。垢是客，不是主——这一句破的是”染”。</p>
+<p><strong>本不生灭。</strong>
+杯会碎，会旧。但”杯之为杯”这件事，不随这一只具体的杯碎掉而消失：你打碎一只，器具之理还在，下一只仍是杯。生灭的是相，不生灭的是性——这一句破的是”断”。</p>
+<p><strong>本无动摇。</strong>
+端着杯走路，水在晃，杯不晃。人看见水晃，就说”杯子在动”；其实动的是水。这一句破的是”以境为心”（详见第四节风幡）。</p>
+<p><strong>能生万法。</strong>
+空杯不预设内容。同一只杯，可盛茶可盛药可盛清水，应缘而现其用。若杯是满的、定死的，就只有一种可能——这一句破的是”定法”，正对第七分”无有定法”。</p>
+<p><strong>本自具足。</strong>
+单独拎出来说，因为它是五句里被误读得最狠的一句。</p>
+<h3 id="三本自具足辨具足不是盈满">三、本自具足辨：具足不是盈满</h3>
+<p>这是全文最要紧的一节。</p>
+<p>多数人把”本自具足”读成”我里面什么都有，不必再求”，于是两个后果：一是不修了，二是不肯承认自己有缺。</p>
+<p>但用空杯一看，这个读法立刻站不住：</p>
+<p><strong>杯之所以为杯，正在其空。若杯已装满，它就不复能盛，反而失其所以为杯。</strong></p>
+<p>那么”具足”具足的是什么？不是内容，是<strong>容量与器性</strong>——不缺”能盛”这件事。杯不因今日空而少一分，不因明日满而多一分。</p>
+<p>所以：</p>
+<ul>
+<li>具足 ≠
+盈满。盈满是”合”：把外物一件件装进来，装得越多越像样。具足是”和”：本来如是，不待外加。</li>
+<li>具足 ≠ 无缺。杯会缺角，缺角仍是杯；人有烦恼，烦恼不妨碍自性。</li>
+<li>具足 ≠
+不必修。杯本来就空，可它照样要洗。洗不是给杯添容量，是把不属于杯的东西去掉。</li>
+</ul>
+<p><strong>修行在空杯模型里，从头到尾是减法，不是加法。</strong>
+这一条若立不住，念佛、参禅、读经全会变成往杯里堆东西——堆得越多，越盛不了水。</p>
+<p>本经第六分”法尚应舍，何况非法”，说的就是这个：筏子是用来过的，不是用来背的；杯子是用来盛的，不是用来当仓库的。</p>
+<h3 id="四风幡公案摇的是水不是杯">四、风幡公案：摇的是水，不是杯</h3>
+<p>《坛经·行由品》末段，慧能至广州法性寺，值印宗法师讲《涅槃经》。时有风吹幡动，一僧曰”风动”，一僧曰”幡动”，议论不已。慧能进曰：</p>
+<blockquote class="sutra">
+<p><strong>不是风动，不是幡动，仁者心动。</strong></p>
+</blockquote>
+<p>一众骇然。</p>
+<p>这则公案常被讲成”一切唯心所现、外境不存在”，那是把它读坏了。先按三层拆开：</p>
+<p><strong>第一层，风动。</strong>
+说风动的人，把动归给风。风确实是缘——没有风，幡不动。这一层不算错，只是没到底。</p>
+<p><strong>第二层，幡动。</strong>
+说幡动的人，把动归给幡。幡确实是现相——没有幡，风也无从显其动。这一层也不算错，只是也没到底。</p>
+<p><strong>第三层，心动。</strong>
+六祖不是说”风没动、幡没动”，也不是说”你们看错了”。他说的是：<strong>你们争的这口气，在动。</strong></p>
+<p>两僧争的不是风与幡，是”谁对”。风动幡动是境上的事，议论不已是心上的事。境上的事本来可以两说皆通（缘与相，缺一不成动），一旦要争一个唯一，心就随之摇了。</p>
+<p>用杯看：<strong>风吹幡动，如风过水面，水起波纹。水在动，杯不动。</strong></p>
+<ul>
+<li>若见水动而说”杯在动”，是以境为心——第一层迷。</li>
+<li>若见水动而慌张扶杯，是随境转——第二层迷。</li>
+<li>若见水动而怪水不该动，是想要一个不动的水——第三层迷，且更深，因为这一念本身，又添了一道波。</li>
+</ul>
+<p><strong>“仁者心动”的”动”，不是”心里有念头”，是”心随境起了争”。</strong>
+念头如水波，本来就有；争如水被搅，越搅越乱。</p>
+<p>这与”即非”句式完全同构：</p>
+<ul>
+<li>风动、幡动——随俗安立，缘起宛然，不废；</li>
+<li>即非风动、即非幡动——胜义上，无一个独立的”动者”可得，动是缘合而现，无自性；</li>
+<li>是名风动、是名幡动——二谛圆融，照常说风说幡，只是不把心安放在”必须争出一个对”上。</li>
+</ul>
+<p>所以六祖那一句，不是否定句，是<strong>把战场从境上挪回心上</strong>。这与我全书反复讲的”即非不是否定，是不执”，是同一个手法。</p>
+<h3 id="五仁者心动最危险的两种读法">五、“仁者心动”最危险的两种读法</h3>
+<p><strong>误一：既然心动，那外面什么都没有，全是我想的。</strong><br />
+正见：风有风的作用，幡有幡的作用，吹倒了会砸人。否定外境，是把般若读成唯心，落到本经第二十七分所破的”断灭相”。六祖挪的是战场，不是拆掉战场。</p>
+<p><strong>误二：“心动”就是起念即错，所以要做到一念不起、看什么都不分别。</strong><br />
+正见：水不可能无波。压念是把水冻住，冻住的水也盛不了、用不上。六祖说的”不动”，是杯不自摇，不是水不晃。</p>
+<p><strong>误三：那我不争就好了，什么都点头，不论是非。</strong><br />
+正见：不争是心上不立胜负，不是事上不分对错。事理该辨的照辨——第九分讲”无诤三昧”，说的是内心不起对立较量，不是说嘴巴不能分辨。</p>
+<h3 id="六五蕴是杯中物不是杯主">六、五蕴是杯中物，不是杯主</h3>
+<p>把五蕴放到杯里，位置就清楚了：</p>
+<table class="t">
+<thead>
+<tr class="header">
+<th>五蕴</th>
+<th>在杯里的位置</th>
+<th>归属</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>色</td>
+<td>杯的形质</td>
+<td>器</td>
+</tr>
+<tr class="even">
+<td>受</td>
+<td>杯中水的冷暖</td>
+<td>内容</td>
+</tr>
+<tr class="odd">
+<td>想</td>
+<td>给水贴的标签——这是茶、那是药</td>
+<td>内容</td>
+</tr>
+<tr class="even">
+<td>行</td>
+<td>端杯、倾杯、添水的动作</td>
+<td>用</td>
+</tr>
+<tr class="odd">
+<td>识</td>
+<td>知道”我在喝”的那一层了别</td>
+<td>用</td>
+</tr>
+</tbody>
+</table>
+<p>要紧的是：<strong>五蕴都是杯里的事，没有一样是杯本身。</strong></p>
+<p>人之所以苦，是把”这杯水烫”读成”我烫”，把”这水是苦的”读成”我苦”，把”杯子今天空了”读成”我没了”。第十八分”三心不可得”，破的正是这一层：念头如水，来了又去，没有一个”我”在水中。</p>
+<p>而”本自具足”要说的，恰是：<strong>水来水去，杯的容量不减。</strong></p>
+<h3 id="七与金刚经三处接口">七、与《金刚经》三处接口</h3>
+<p>这三处不是比附，是同一件事的三种说法：</p>
+<table class="t">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>《金刚经》</th>
+<th>《坛经》</th>
+<th>空杯</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>应无所住而生其心（第十分）</td>
+<td>本自具足 / 能生万法</td>
+<td>杯空，故能盛；盛而不留</td>
+</tr>
+<tr class="even">
+<td>凡所有相，皆是虚妄（第五分）</td>
+<td>本自清净 / 本不生灭</td>
+<td>垢与碎，都是杯相，不是杯性</td>
+</tr>
+<tr class="odd">
+<td>不取于相，如如不动（第三十二分）</td>
+<td>本无动摇</td>
+<td>水摇而杯不动</td>
+</tr>
+</tbody>
+</table>
+<p>尤其第一行：<strong>“无所住”就是空杯，“生其心”就是能盛。</strong>
+六个字里，前半是体，后半是用；空杯模型把它做成了一个东西，不再分成两截。六祖那五句，正是把这六个字拆成五个面来看——所以它出生在这一句下，不是偶然。</p>
+<p>第三行要补一句：<strong>“如如不动”不是不动，是不随相动。</strong>
+若读成”什么都不做、什么都不想”，则杯成了石头，杯子也就不成其为杯子了。</p>
+<h3 id="八勘破五条">八、勘破五条</h3>
+<p><strong>误一：本自具足，所以不必修行、不必求法。</strong><br />
+正见：杯本空，照样要洗。具足讲的是器性不缺，不是内容已备。以具足废修，正落第六分”取非法相”。</p>
+<p><strong>误二：本自具足，所以我不该觉得自己有缺，承认有缺就是没信心。</strong><br />
+正见：缺角仍是杯。承认烦恼，与自性无损；不承认，只是把茶渍当成杯。</p>
+<p><strong>误三：本无动摇，所以遇事不能有情绪波动，波动就是功夫不到。</strong><br />
+正见：水有波是水之常。功夫不在无波，在不因波而翻杯。</p>
+<p><strong>误四：风幡公案是叫人别管闲事、别争论。</strong><br />
+正见：它管的是”争”这个动作从哪里起。事该辨则辨，心不落胜负。</p>
+<p><strong>误五：五句是顿悟的人才用得上的高调，渐修的人用不着。</strong><br />
+正见：五句讲的是杯的构造，不是杯的成就。知道杯是空的，才知道该往里放什么、该洗掉什么。理路不明，渐修容易修成堆货。</p>
+<h3 id="九结赞">九、结赞</h3>
+<p>一句《金刚经》，五句《坛经》，一则风幡公案，说的是同一只杯子：</p>
+<p><strong>杯本无垢，故可洗；杯不自摇，故可端；杯空能盛，故可用；杯不预设，故可应万缘。</strong></p>
+<p>所谓修行，从头到尾只是三件事：洗杯、端杯、倒水。洗不增其量，端不代其动，倒不留其痕。</p>
+<p>若有人问：杯子最后是什么样？<br />
+答：还是那只杯子。只是里面的水，不再被当成杯子。</p>
+<hr />
+<h2 id="附记">附记</h2>
+<p>本稿为一次未成立的解读，保留原貌，供作者日后补”驳正”一节时对照。</p>
+<p>在驳正补上之前，读者若引用本稿，请一并引用本节说明；只引正文而不引说明，即等于把一次失败的尝试当成结论。</p>
+<hr />
+<p><em>润泽说 道可道之六祖坛经 · 自性五句与风幡公案（存疑稿）·
+终</em></p>
+<p><em>2026年11月</em></p>
+</main>
+  <div class="foot">润泽说 道可道之六祖坛经 · 自性五句与风幡公案（存疑稿）· v0.1.0<br>存而不论，留以待正</div>
+</div>
+</body>
+</html>
