@@ -32,6 +32,7 @@ nav = "\n".join('<li class="wide"><a href="#%s"><i>·</i><span>%s</span></a></li
                 for hid, raw in heads)
 body = body.replace("<blockquote>", '<blockquote class="sutra">')
 body = body.replace("<table>", '<table class="t">')
+body = body.replace("<!-- FIG:fengfan -->", kit.fig_svg(BOOK/"figures/图2-风幡阴阳太和.svg", "风幡阴阳太和", "幡为阴、风为阳、心为涵摄阴阳之太和；此心非心，故名此心。"))
 
 FAVICON = ("<link rel=\"icon\" type=\"image/svg+xml\" href=\"data:image/svg+xml,"
            "%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E"
