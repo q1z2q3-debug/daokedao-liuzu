@@ -13,19 +13,7 @@ body{margin:0;background:var(--paper);color:var(--ink);
   -webkit-font-smoothing:antialiased;line-height:1.95;}
 .page{max-width:760px;margin:0 auto;padding:56px 28px 80px;}
 
-.cover{border:1px solid var(--line);background:var(--paper2);padding:70px 38px 58px;
-  text-align:center;margin-bottom:44px;position:relative;}
-.cover::before{content:"";position:absolute;inset:12px;border:1px solid #EBE4D8;pointer-events:none;}
-.cover .series{font-size:12.5px;letter-spacing:.32em;color:var(--brown);margin-bottom:24px;}
-.cover h1{font-size:38px;font-weight:700;letter-spacing:.16em;margin:0 0 8px;line-height:1.5;}
-.cover .sub{font-size:14.5px;color:var(--brown);letter-spacing:.1em;}
-.cover .tag{display:inline-block;margin-top:14px;padding:3px 12px;font-size:12px;
-  letter-spacing:.16em;color:var(--ochre);border:1px solid #D8B9AE;}
-.cover .rule{width:52px;height:2px;background:var(--ochre);margin:22px auto 18px;}
-.cover .verse{font-size:14.5px;color:var(--brown);letter-spacing:.06em;line-height:2.1;}
-.cover .meta{display:flex;flex-wrap:wrap;justify-content:center;gap:6px 0;font-size:12px;color:#9C8E7C;letter-spacing:.12em;margin-top:26px;}
-.cover .meta span{white-space:nowrap;}
-.cover .meta span:not(:last-child)::after{content:"　·　";color:#C4B9A8;}
+__KIT_CSS__
 
 .notice{border:1px solid #D8B9AE;background:#FBF3EE;padding:16px 20px;margin-bottom:40px;
   font-size:14.5px;line-height:1.9;color:#5A4B3F;}
@@ -70,10 +58,7 @@ table.t td{color:var(--ink2);}
 
 @media (max-width:640px){
   .page{padding:30px 17px 54px;}
-  .cover{padding:48px 22px 42px;}
-  .cover h1{font-size:28px;}
-  .cover .verse{font-size:13px;}
-  .cover .meta{font-size:10.5px;letter-spacing:.04em;margin-top:22px;}
+  __KIT_MQ__
   h2{font-size:20px;margin-top:40px;}
   p{font-size:15.5px;}
   li{font-size:15px;}
@@ -83,14 +68,29 @@ table.t td{color:var(--ink2);}
 </head>
 <body>
 <div class="page">
-  <div class="cover">
-    <div class="series">润泽说 · 道可道</div>
-    <h1>六　祖　坛　经</h1>
-    <div class="sub">自性五句与风幡公案</div>
-    <div class="tag">重 校 本</div>
-    <div class="rule"></div>
-    <div class="verse">何期自性，本自具足；<br>何期自性，能生万法。</div>
-    <div class="meta"><span>宗宝本《坛经·行由品》</span><span>三才五蕴太极空杯</span><span>幡阴 · 风阳 · 太和</span></div>
+  <section class="cover">
+    <div class="series">润 泽 说 · 道 可 道</div>
+    <div class="stage">
+      <div class="gatha l">何期自性<br>能生万法</div>
+      <div class="center">
+        <h1>六祖坛经</h1>
+        <div class="sub">自性五句与风幡公案（重校本）</div>
+        <div class="tag">重 校 本</div>
+        <div class="seal">坛</div>
+      </div>
+      <div class="gatha r">何期自性<br>本自具足</div>
+    </div>
+    <div class="meta"><span>宗宝本《坛经·行由品》</span><span>三才五蕴太极空杯</span><span>幡阴 · 风阳 · 太和</span><span>二〇二六年十一月</span></div>
+  </section>
+
+  <div class="frontis">
+    <div class="fseries">润 泽 说 · 道 可 道</div>
+    <div class="ftitle">六祖坛经</div>
+    <div class="fsub">自性五句与风幡公案（重校本）</div>
+    <div class="frule"></div>
+    <div class="fname">润　泽　著</div>
+    <div class="fmeta">底本　《六祖大师法宝坛经》宗宝本（通行本）<br>模型　三才五蕴太极空杯（照录《心经通释》原版）<br>立骨　幡为阴 · 风为阳 · 心为太和<br>版本　v0.2.0 · 二〇二六年十一月</div>
+    <div class="fseal">坛</div>
   </div>
 
   <div class="notice">
