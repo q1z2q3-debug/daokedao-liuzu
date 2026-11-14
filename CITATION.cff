@@ -1,11 +1,11 @@
 cff-version: 1.2.0
-message: "若引用本稿，请用下列格式，并一并标注其存疑状态。"
-title: "润泽说 道可道之六祖坛经 · 自性五句与风幡公案（存疑稿）"
-abstract: "《坛经·行由品》「何期自性」五句与「不是风动，不是幡动，仁者心动」公案的一次解读尝试，以「三才五蕴太极空杯」为镜逐层对看。此篇经作者判定不成立，作存疑稿保留，不作定论引用。"
+message: "若引用本稿，请用下列格式。"
+title: "润泽说 道可道之六祖坛经 · 自性五句与风幡公案（重校本）"
+abstract: "《坛经·行由品》「何期自性」五句与「不是风动，不是幡动，仁者心动」公案之通释。依「三才五蕴太极空杯」原型（杯底色、四壁受想行识、空超器相边界），以幡为阴、风为阳、慧能所指之心为太和，会通《金刚经》「应无所住而生其心」「此心非心，故名此心」。"
 authors:
   - name: "润泽"
 date-released: 2026-11-14
-version: 0.1.0
+version: 0.2.0
 license: CC-BY-NC-SA-4.0
 repository-code: "https://github.com/q1z2q3-debug/daokedao-liuzu"
 url: "https://q1z2q3-debug.github.io/daokedao-liuzu/"

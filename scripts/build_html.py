@@ -8,16 +8,15 @@ import pathlib, re, subprocess
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 BOOK = ROOT / "book"
-MD = BOOK / "润泽说 道可道之六祖坛经·自性五句与风幡公案（存疑稿）.md"
-OUT = BOOK / "坛经·存疑稿·阅读版.html"
+MD = BOOK / "润泽说 道可道之六祖坛经·自性五句与风幡公案（重校本）.md"
+OUT = BOOK / "坛经·阅读版.html"
 TMP = pathlib.Path("/tmp/liuzu_src.md")
 BODY_TMP = pathlib.Path("/tmp/liuzu_body.html")
 
 src = MD.read_text(encoding="utf-8")
 src = re.sub(r"^---\n.*?\n---\n", "", src, count=1, flags=re.S)
-src = src.replace("# 润泽说 道可道之六祖坛经\n## 自性五句与风幡公案（存疑稿）\n", "")
-src = re.sub(r"^## 关于这一篇的说明", "## 说明", src, flags=re.M)
-src = re.sub(r"^## 正文（2026-11-14 稿 · 原文保留）", "## 正文", src, flags=re.M)
+src = src.replace("# 润泽说 道可道之六祖坛经\n## 自性五句与风幡公案（重校本）\n", "")
+
 TMP.write_text(src, encoding="utf-8")
 
 subprocess.run(["pandoc", str(TMP), "-f", "markdown+hard_line_breaks",

@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%237C6D5C'/%3E%3Ctext x='32' y='46' font-size='30' text-anchor='middle' fill='%23F7F4EE' font-family='serif'%3E%E8%97%E4%3C/text%3E%3C/svg%3E">
+<title>润泽说 道可道之六祖坛经 · 自性五句与风幡公案（重校本）</title>
+<style>
+:root{--paper:#F7F4EE;--paper2:#FCFAF6;--ink:#25211D;--ink2:#3B352F;--ochre:#994433;--brown:#7C6D5C;--line:#DCD5C8;}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font-family:"Noto Serif SC","Songti SC","Source Han Serif SC",serif;
+  -webkit-font-smoothing:antialiased;line-height:1.95;}
+.page{max-width:760px;margin:0 auto;padding:56px 28px 80px;}
+
+.cover{border:1px solid var(--line);background:var(--paper2);padding:70px 38px 58px;
+  text-align:center;margin-bottom:44px;position:relative;}
+.cover::before{content:"";position:absolute;inset:12px;border:1px solid #EBE4D8;pointer-events:none;}
+.cover .series{font-size:12.5px;letter-spacing:.32em;color:var(--brown);margin-bottom:24px;}
+.cover h1{font-size:38px;font-weight:700;letter-spacing:.16em;margin:0 0 8px;line-height:1.5;}
+.cover .sub{font-size:14.5px;color:var(--brown);letter-spacing:.1em;}
+.cover .tag{display:inline-block;margin-top:14px;padding:3px 12px;font-size:12px;
+  letter-spacing:.16em;color:var(--ochre);border:1px solid #D8B9AE;}
+.cover .rule{width:52px;height:2px;background:var(--ochre);margin:22px auto 18px;}
+.cover .verse{font-size:14.5px;color:var(--brown);letter-spacing:.06em;line-height:2.1;}
+.cover .meta{display:flex;flex-wrap:wrap;justify-content:center;gap:6px 0;font-size:12px;color:#9C8E7C;letter-spacing:.12em;margin-top:26px;}
+.cover .meta span{white-space:nowrap;}
+.cover .meta span:not(:last-child)::after{content:"　·　";color:#C4B9A8;}
+
+.notice{border:1px solid #D8B9AE;background:#FBF3EE;padding:16px 20px;margin-bottom:40px;
+  font-size:14.5px;line-height:1.9;color:#5A4B3F;}
+.notice strong{color:var(--ochre);}
+
+.toc{background:var(--paper2);border:1px solid var(--line);padding:18px 22px;margin-bottom:48px;}
+.toc h4{margin:0 0 10px;font-size:12.5px;letter-spacing:.22em;color:var(--brown);font-weight:400;}
+.toc ol{list-style:none;margin:0;padding:0;}
+.toc li a{display:flex;gap:9px;align-items:baseline;text-decoration:none;color:var(--ink);
+  font-size:14.5px;padding:6px 0;border-bottom:1px dotted #E4DDD0;}
+.toc li a:hover{color:var(--ochre);}
+.toc i{font-style:normal;font-size:11.5px;color:var(--ochre);min-width:12px;}
+
+h2{font-size:23px;font-weight:700;letter-spacing:.06em;margin:52px 0 22px;
+  padding-top:18px;border-top:1px solid var(--line);}
+h2::before{content:"";display:block;width:30px;height:2px;background:var(--ochre);margin:0 0 15px;}
+h3{font-size:15px;font-weight:600;letter-spacing:.14em;color:var(--ochre);
+  margin:28px 0 10px;display:flex;align-items:center;gap:10px;}
+h3::after{content:"";flex:1;height:1px;background:#EAE3D6;}
+
+p{margin:0 0 1.02em;font-size:16.5px;color:var(--ink2);text-align:justify;}
+ul{margin:0 0 16px;padding-left:0;list-style:none;}
+li{font-size:16px;color:var(--ink2);margin-bottom:8px;padding-left:16px;position:relative;text-align:justify;}
+li::before{content:"";position:absolute;left:0;top:.85em;width:5px;height:5px;background:#C9B7A4;border-radius:50%;}
+ol{margin:0 0 16px;padding-left:1.8em;}
+ol li{padding-left:0;}
+ol li::before{content:none;}
+
+blockquote.sutra{margin:22px 0 26px;padding:16px 20px;background:#FBF3EE;
+  border-left:3px solid var(--ochre);}
+blockquote.sutra p{margin:0 0 .6em;font-size:15.5px;line-height:2.05;color:#4A4139;letter-spacing:.03em;}
+blockquote.sutra p:last-child{margin-bottom:0;}
+
+table.t{width:100%;border-collapse:collapse;margin:14px 0 24px;font-size:13.5px;}
+table.t th,table.t td{border:1px solid var(--line);padding:8px 10px;text-align:left;
+  vertical-align:top;line-height:1.7;word-break:break-word;}
+table.t th{background:#F1EAE0;font-weight:600;}
+table.t td{color:var(--ink2);}
+
+.foot{margin-top:60px;padding-top:22px;border-top:1px solid var(--line);text-align:center;
+  font-size:12.5px;color:var(--brown);letter-spacing:.1em;line-height:2.1;}
+
+@media (max-width:640px){
+  .page{padding:30px 17px 54px;}
+  .cover{padding:48px 22px 42px;}
+  .cover h1{font-size:28px;}
+  .cover .verse{font-size:13px;}
+  .cover .meta{font-size:10.5px;letter-spacing:.04em;margin-top:22px;}
+  h2{font-size:20px;margin-top:40px;}
+  p{font-size:15.5px;}
+  li{font-size:15px;}
+  table.t{font-size:12px;display:block;overflow-x:auto;white-space:nowrap;}
+}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="cover">
+    <div class="series">润泽说 · 道可道</div>
+    <h1>六　祖　坛　经</h1>
+    <div class="sub">自性五句与风幡公案</div>
+    <div class="tag">重 校 本</div>
+    <div class="rule"></div>
+    <div class="verse">何期自性，本自具足；<br>何期自性，能生万法。</div>
+    <div class="meta"><span>宗宝本《坛经·行由品》</span><span>三才五蕴太极空杯</span><span>幡阴 · 风阳 · 太和</span></div>
+  </div>
+
+  <div class="notice">
+    <strong>重校本 v0.2.0。</strong>此前两版解读经作者指出不成立，已作废（仅存 git 历史）；本版依《心经通释》原版空杯模型重写，并以「幡为阴、风为阳、慧能之心为太和」立骨，<strong>此心非心，故名此心</strong>。
+  </div>
+
+  <nav class="toc"><h4>目　次</h4><ol><li class="wide"><a href="#说明"><i>·</i><span>说明</span></a></li>
+<li class="wide"><a href="#正文"><i>·</i><span>正文</span></a></li>
+<li class="wide"><a href="#附记"><i>·</i><span>附记</span></a></li></ol></nav>
+  <main><h2 id="说明">说明</h2>
+<h3 id="一这一篇是什么">一、这一篇是什么</h3>
+<p>《坛经·行由品》两段，一体通释：</p>
+<p>其一，六祖闻五祖说《金刚经》至「应无所住而生其心」，言下大悟，说出「何期自性」五句。<br />
+其二，广州法性寺，风吹幡动，二僧一曰风动、一曰幡动，议论不已；慧能曰「不是风动，不是幡动，仁者心动」。</p>
+<p>本篇以「三才五蕴太极空杯」为镜，把两段并到一处讲：五句明体，风幡显用，体用同证，落在一句「应无所住而生其心」上。</p>
+<h3 id="二两版作废三条勘误">二、两版作废，三条勘误</h3>
+<p>此篇先有两版，经作者指出解读不成立，均作废，仅存于 git
+历史。错在三处，记在此处，以免日后再犯：</p>
+<p><strong>误一：三才配属错位。</strong><br />
+写成「天＝自性本体」。原型明定：色属地（承载）、受想行属人（感应、裁断、迁化）、识属天（神明、了别）。自性不在三才任何一位，它是统摄三才的太极。此位一错，就会顺手把自性塞进杯里当成一层东西。</p>
+<p><strong>误二：把「空」降成杯内腔。</strong><br />
+写成「杯里能盛」「杯子装水」。原型图上「空」字虽写在杯内，义上明写：「空相不是杯子里面狭小的中空，而是超越五蕴器相边界的全体实相」「不是杯子内部的空间容纳宇宙，而是空性可以超越杯子这个有形之器」。空若被塞回杯壁以内，芥子纳须弥就讲反了。</p>
+<p><strong>误三：漏掉阴阳与太和。</strong><br />
+风幡公案本是阴阳对待之局：<strong>幡为阴</strong>（有形可睹），<strong>风为阳</strong>（无形而有动能）。二僧各执一端，是把一体的太和拆成两半。慧能所指之心，不是阴阳中任一边，是<strong>涵摄阴阳的太和</strong>。这一层不讲，「仁者心动」只能讲成「别争论」，落不到般若上。</p>
+<h3 id="三本版所用原型照录心经通释原版">三、本版所用原型（照录《心经通释》原版）</h3>
+<table class="t">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>原型条款</th>
+<th>原文</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>器之构成</td>
+<td>杯底：色（地之承载）；四壁：受（感通）、想（裁断）、行（迁化）、识（了别）。色为底，四蕴为壁</td>
+</tr>
+<tr class="even">
+<td>缘聚缘散</td>
+<td>因缘聚，则杯相显现；因缘散，则杯相消散。<strong>聚散皆是缘，杯体不因聚而生、不因散而灭其相用</strong></td>
+</tr>
+<tr class="odd">
+<td>空</td>
+<td>图上注「无自性 ·
+非杯本体」；义上——空相不是杯内狭小的中空，是超越五蕴器相边界的全体实相</td>
+</tr>
+<tr class="even">
+<td>执与照</td>
+<td>凡夫：执五蕴为实我，杯壁即我之疆界，故苦。般若：照见缘起，<strong>杯有相可用，无体可执</strong>，故度</td>
+</tr>
+<tr class="odd">
+<td>三才配属</td>
+<td>色属地（承载）｜受想行属人（感应、裁断、迁化）｜识属天（神明、了别）</td>
+</tr>
+<tr class="even">
+<td>模型性质</td>
+<td>本书自建譬喻，非经论原有名相。三才取《易传》，五蕴取经文，杯取《道德经》第十一章「当其无，有器之用」</td>
+</tr>
+</tbody>
+</table>
+<p>一句总标：<strong>器有相用，法无自体；五蕴皆空，度一切苦厄。</strong></p>
+<h3 id="四本版义理骨架">四、本版义理骨架</h3>
+<p>四根柱子，撑起全篇：</p>
+<ol type="1">
+<li><strong>体</strong>：五句所证，是那个不被五蕴器框拘限的空性本际。</li>
+<li><strong>用</strong>：风幡落在五蕴缘起里，如实显现，不废。</li>
+<li><strong>阴阳</strong>：幡阴风阳，二僧各执一边，太和被拆成两半。</li>
+<li><strong>心</strong>：慧能所指之心，是涵摄阴阳的太和，是指代词——<strong>此心非心，故名此心</strong>。不住五蕴，亦不住空。</li>
+</ol>
+<h2 id="正文">正文</h2>
+<h3 id="弁言">弁言</h3>
+<p>慧能闻「应无所住而生其心」而悟，流出自性五句；风幡公案，是这一句的现场勘验。</p>
+<p>幡是阴，有形可见；风是阳，无形而能起吹动之能。二僧各抓一端，落在阴阳分判的两边。慧能点出的「心动」，不在阴阳任一边，是<strong>阴阳未分而同时涵摄阴阳的太和本心</strong>。</p>
+<p>这个「心」是指代词，正对《金刚经》「应无所住而生其心」：不住五蕴，亦不住空。此心非心，故名此心。</p>
+<p>五句明体，风幡显用；体用同证，以太和统摄阴阳二相。</p>
+<hr />
+<h3 id="一逐句通释五句与空杯">一、逐句通释：五句与空杯</h3>
+<blockquote class="sutra">
+<p>何期自性，本自清净；<br />
+何期自性，本不生灭；<br />
+何期自性，本自具足；<br />
+何期自性，本无动摇；<br />
+何期自性，能生万法。</p>
+</blockquote>
+<p><strong>1. 本自清净</strong></p>
+<p>清净不是说器相之上没有尘垢。</p>
+<p>尘垢、烦恼、苦受，都是附着在杯底、杯壁（色受想行识）之上的缘起痕迹。五蕴这个器可以沾痕，但承载整套器相的空性本际，从来不受沾染。</p>
+<p>垢是缘生之相，不是空性本身。如同杯壁蒙尘，虚空不因壁上之尘而污浊。清净是空性本际的特质，不是把五蕴擦到一尘不染才叫清净——那样修，修的是杯壁，不是见地。</p>
+<p><strong>2. 本不生灭</strong></p>
+<p>生灭只属于杯这个器相。因缘会聚，色受想行识配合，杯相显现；因缘消散，底与壁的和合解体，杯相随之消散。</p>
+<p>但托举这一套器相显现的空性，不因杯相成型而新生，不因杯相消散而毁灭。</p>
+<p>有生有灭的是五蕴和合之器；不生不灭的是超越器相边界的实相。原型那句注最好用：<strong>杯体不因聚而生，不因散而灭其相用。</strong></p>
+<p><strong>3. 本自具足（全篇核心，最易误读）</strong></p>
+<p>具足，不是空性里面预先存放了一切事物、答案、功德；也不是器本身自带什么储备。</p>
+<p>具足说的是：空性本际不受五蕴器相的边界限制。因缘一熟，色受想行识便可构器、便可显相。它天然具备「容许一切缘起显现」的全体可能，无欠、无局。</p>
+<p>杯子的器相有大小、有疆界；空性无界——芥子可以纳须弥。不是小杯装下大山，是器的边界本非实有，空性本际不受这层框限。</p>
+<blockquote class="sutra">
+<p>勘定：具足 ≠
+现成拥有。具足是「具备显现一切的可能」，不是「里面已经装好万物」。</p>
+</blockquote>
+<p><strong>4. 本无动摇</strong></p>
+<p>动摇、动荡、起伏，发生在五蕴器相之中。受有苦乐起伏，想有取舍分别，行有趋避迁转，识有了别归档不休。器内念念流转，一刻不停。</p>
+<p>但空性本际不随五蕴流转而摇。器中波澜万千，承载波澜的实相如如安住。</p>
+<p>不是熄灭念头、止住感受才叫不动；是知道所有动荡都在缘起器相之内，不把器的动荡当成自己的动荡。</p>
+<p><strong>5. 能生万法</strong></p>
+<p>正因自性是空、不受器框局限，因缘一聚，色受想行识和合，便构筑种种器相，显现万法。</p>
+<p>万法全部依托五蕴这套缘起框架而现。空不是死寂的空无，是空而能显：缘起则万象现。</p>
+<p>空性不主动造作万法，只是万法显现的依托——如虚空不主动生出山河，山河依托虚空才得显现。</p>
+<hr />
+<h3 id="二风动幡动仁者心动阴阳太和与此心非心">二、风动、幡动、仁者心动：阴阳、太和与此心非心</h3>
+<blockquote class="sutra">
+<p>时有风吹幡动。一僧曰风动，一僧曰幡动。议论不已。慧能进曰：不是风动，不是幡动，仁者心动。</p>
+</blockquote>
+<p><strong>1. 幡为阴：有形之相，落在杯底「色」</strong></p>
+<p>幡肉眼可睹，有形、有边界，属阴。它是色法显现，是五蕴器相的一环。僧人执幡，是把动因锁在有形这一侧。</p>
+<p><strong>2. 风为阳：无形之能，隐而推动色相</strong></p>
+<p>风看不见，无固定形质，却有吹动、变化的势能，属阳。另一位僧人执风，是把动因锁在无形那一侧。</p>
+<p>这两个人，把本自一体的太和拆成阴阳两端，各守一边，互不相下。这就是「合」：以分别造作割裂整体，立起对立的疆界。</p>
+<p><strong>3. 太和，即慧能所说之心</strong></p>
+<p>风与幡是一对对待之相。阴阳相待，才有动静可辨。</p>
+<p>而太和不是风，也不是幡；是能涵容阴阳、不落阴阳任一端的本心。这个心不追阴相，不逐阳能；它同时照见「有形的幡」与「无形的风」，知其本是一体流转。</p>
+<p><strong>4. 契《金刚经》：此心非心，故名此心</strong></p>
+<ul>
+<li>不住阴：不黏在幡上，不黏在有形色相上，不在受想行识里争一个是非。</li>
+<li>不住阳：不黏在抽离出来的那股无形之风上，也不逃入一个孤悬的空境里。</li>
+</ul>
+<p>不黏两边，而阴阳万象于中显现、于中流转。这颗太和之心，不是五蕴里的分别识，也不是一个可以捧住的实体——所以<strong>此心非心，故名此心</strong>。</p>
+<p>「心动」之「动」，于是不是念头扰动，而是太和本心的照用：容阴阳、贯动静，不被两边的边界困住。</p>
+<blockquote class="sutra">
+<p>《金刚经》第十八分：过去心不可得，现在心不可得，未来心不可得。三心既不可得，则此心无自体；无自体而能照，故名此心。</p>
+</blockquote>
+<p><strong>5. 空杯视角收束</strong></p>
+<p>五蕴构出边界，我们才分出「可见的幡」与「不可见的风」；超越这套五蕴边界的空性本际，就是太和的基底。</p>
+<p>阴阳是在空性之上显现的对待相；太和本心，是空性之起用——含摄阴阳，而不被阴阳分割。</p>
+<blockquote class="sutra">
+<p>通俗收束：执幡，执阴；执风，执阳。都落在对待两边。慧能的本心是太和：阴阳同存，一体无碍，不抓任何一边，无所住而生其照。</p>
+</blockquote>
+<hr />
+<h3 id="三和合之辨总摄">三、和合之辨总摄</h3>
+<ul>
+<li><strong>和</strong>：太和本心、空性自性，超越五蕴器相边界，涵摄阴阳，无对立，本自圆满。五句所证即此本际；「无所住而生其心」即此本际之起用。</li>
+<li><strong>合</strong>：色受想行识因缘构器，划定疆界，割裂阴阳，立二元对立、起取舍攀缘。二僧辩论，正是「合」的造作；而枯守一个空境，也是另一种「合」——把空做成了可抓取之物。</li>
+</ul>
+<p>修行落点，不是打碎五蕴、不要感知觉知；也不是死死抱住一个空境。照常启用色受想行识这套缘起之器，清清楚楚看见阴（幡）、阳（风）在流转，但不被阴阳的分别困住，安住太和。</p>
+<hr />
+<h3 id="四对照汇总">四、对照汇总</h3>
+<table class="t">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>经文 / 公案</th>
+<th>阴阳定位</th>
+<th>模型位置</th>
+<th>要义</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>本自清净</td>
+<td>太和本际</td>
+<td>空性本际</td>
+<td>尘垢在五蕴器壁，不染实相</td>
+</tr>
+<tr class="even">
+<td>本不生灭</td>
+<td>太和本际</td>
+<td>空性本际</td>
+<td>生灭属缘起器相，实相无生灭</td>
+</tr>
+<tr class="odd">
+<td>本自具足</td>
+<td>太和本际</td>
+<td>空性本际</td>
+<td>不受器相边界束缚，含摄一切缘起显现的可能，芥子纳须弥</td>
+</tr>
+<tr class="even">
+<td>本无动摇</td>
+<td>太和本际</td>
+<td>空性本际</td>
+<td>流转动荡在五蕴器内，实相如如</td>
+</tr>
+<tr class="odd">
+<td>能生万法</td>
+<td>太和起用，阴阳相感</td>
+<td>空性 + 五蕴缘起</td>
+<td>空为依托，因缘聚合，五蕴构器而万象显</td>
+</tr>
+<tr class="even">
+<td>幡动</td>
+<td>阴</td>
+<td>杯底 · 色</td>
+<td>有形的五蕴缘起之相</td>
+</tr>
+<tr class="odd">
+<td>风动</td>
+<td>阳</td>
+<td>缘起动能，依托色而起</td>
+<td>无形的势能，与幡相待</td>
+</tr>
+<tr class="even">
+<td>二僧争辩</td>
+<td>分判阴阳</td>
+<td>四壁：受想行识</td>
+<td>割裂太和，住于阴阳一端</td>
+</tr>
+<tr class="odd">
+<td>仁者心动</td>
+<td>太和本心</td>
+<td>超越阴阳、超越五蕴边界</td>
+<td>不住阴、不住阳；不住五蕴，不住空；此心非心，故名此心</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="五收尾结义">五、收尾结义</h3>
+<p>自性五句，揭示太和空性本来圆满；<br />
+风幡公案，勘破阴阳对待的迷局。</p>
+<p>幡是阴，形显；风是阳，能隐。世人惯在两端取舍争执。<br />
+慧能点出的本心，是统摄阴阳的太和。</p>
+<p>不落阴阳二边，应无所住而生其心——正是《金刚经》一脉的般若。</p>
+<hr />
+<h2 id="附记">附记</h2>
+<p>一、本篇模型用语，一律照《心经通释》原版：杯底色，四壁受想行识，空为超越器相边界之全体实相。不新造名相，不用「杯中盛物」一类说法。</p>
+<p>二、《坛经》宗宝本，风幡一段记于《行由品》末（印宗法师讲《涅槃经》于法性寺时）；五句记于同品五祖夜授《金刚经》处。</p>
+<p>三、本篇所论太和，取《易传》「保合太和」之义，与本书「和 /
+合之辨」相接：和是本具，合是拼凑；太和不是阴阳之上的第三样东西，是阴阳本不曾分的那个状态。</p>
+<hr />
+<p><em>润泽说 道可道之六祖坛经 · 自性五句与风幡公案（重校本）·
+终</em></p>
+<p><em>2026年11月</em></p>
+</main>
+  <div class="foot">润泽说 道可道之六祖坛经 · 自性五句与风幡公案（重校本）· v0.2.0<br>幡阴风阳，心是太和</div>
+</div>
+</body>
+</html>
