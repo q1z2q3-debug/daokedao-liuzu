@@ -1,0 +1,9 @@
+# 润泽说 道可道之六祖坛经 · 自性五句与风幡公案（重校本）
+
+> 《六祖坛经》两篇专题重校：自性五句的句读与义理层次、风幡公案的能所之辨；附敦煌本对照与异文说明。
+
+## 入口
+- 专题首页：https://q1z2q3-debug.github.io/daokedao-liuzu/
+- 单文件：https://q1z2q3-debug.github.io/daokedao-liuzu/book.html
+- 十品全本（另一站）：https://q1z2q3-debug.github.io/daokedao-tanjing/
+- 仓库：https://github.com/q1z2q3-debug/daokedao-liuzu
